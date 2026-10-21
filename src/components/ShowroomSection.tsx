@@ -324,7 +324,7 @@ export default function ShowroomSection({ onOpenBooking }: ShowroomSectionProps)
           <div className="lg:col-span-7">
             <div
               key={selectedSymptom.id}
-              className="glass-card-dark p-6 sm:p-8 rounded-3xl border border-white/15 space-y-6 shadow-2xl relative overflow-hidden transition-opacity duration-200"
+              className="glass-card-dark p-4 sm:p-6 md:p-8 rounded-3xl border border-white/15 space-y-5 sm:space-y-6 shadow-2xl relative overflow-hidden transition-opacity duration-200"
             >
                 
                 {/* HUD Top Badge Bar */}
@@ -414,21 +414,21 @@ export default function ShowroomSection({ onOpenBooking }: ShowroomSectionProps)
                 </div>
 
                 {/* Direct Emergency Dispatch Call & Booking CTA */}
-                <div className="pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center gap-4">
+                <div className="pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
                   <button
                     onClick={onOpenBooking}
-                    className="w-full sm:flex-1 py-4 px-6 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 text-white font-extrabold text-sm shadow-xl shadow-blue-600/30 flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98] transition-all shimmer-btn"
+                    className="w-full sm:flex-1 py-3.5 sm:py-4 px-4 sm:px-6 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 text-white font-extrabold text-xs sm:text-sm shadow-xl shadow-blue-600/30 flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98] transition-all shimmer-btn"
                   >
-                    <Wrench className="w-4 h-4" />
+                    <Wrench className="w-4 h-4 shrink-0" />
                     <span>Book Doorstep Fix For This Issue</span>
-                    <ArrowRight className="w-4 h-4" />
+                    <ArrowRight className="w-4 h-4 shrink-0" />
                   </button>
 
                   <a
                     href={`tel:${PHONE_NUMBER}`}
-                    className="w-full sm:w-auto px-6 py-4 rounded-2xl bg-white/10 hover:bg-white/20 text-white font-bold text-sm flex items-center justify-center gap-2 transition-colors border border-white/20"
+                    className="w-full sm:w-auto px-5 sm:px-6 py-3.5 sm:py-4 rounded-2xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-colors border border-white/20"
                   >
-                    <Phone className="w-4 h-4 text-emerald-400 animate-pulse" />
+                    <Phone className="w-4 h-4 text-emerald-400 animate-pulse shrink-0" />
                     <span>Call {PHONE_NUMBER}</span>
                   </a>
                 </div>

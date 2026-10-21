@@ -92,10 +92,10 @@ export default function SuratAreaGrid() {
         </div>
 
         {/* Dynamic Surat Emergency Callout */}
-        <div className="mt-12 glass-card-dark p-6 rounded-3xl border border-white/20 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="text-left space-y-1">
-            <h4 className="font-bold text-lg text-white flex items-center gap-2">
-              <UserCheck className="w-5 h-5 text-emerald-400" /> Don't see your specific Surat neighborhood listed?
+        <div className="mt-12 glass-card-dark p-4 sm:p-6 rounded-3xl border border-white/20 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="text-left space-y-1 min-w-0">
+            <h4 className="font-bold text-base sm:text-lg text-white flex items-center gap-2">
+              <UserCheck className="w-5 h-5 text-emerald-400 shrink-0" /> Don't see your specific Surat neighborhood listed?
             </h4>
             <p className="text-xs text-slate-400">
               We cover 100% of Surat district including outer ring roads and industrial GIDC zones. Call our dispatch hotline directly.
@@ -103,7 +103,7 @@ export default function SuratAreaGrid() {
           </div>
           <a
             href={`tel:${PHONE_NUMBER}`}
-            className="px-6 py-3 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-sm shadow-lg shrink-0 hover:scale-105 transition-all"
+            className="w-full sm:w-auto px-5 sm:px-6 py-3 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-xs sm:text-sm shadow-lg text-center hover:scale-105 transition-all"
           >
             Call Dispatch Hotline ({PHONE_NUMBER})
           </a>

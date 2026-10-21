@@ -69,7 +69,7 @@ export default function PricingCalculator({ onOpenBooking }: PricingCalculatorPr
     <section className="py-20 relative bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
-        <div className="glass-panel p-5 sm:p-8 md:p-12 rounded-3xl border border-white/90 shadow-2xl relative overflow-hidden">
+        <div className="glass-panel p-4 sm:p-8 md:p-12 rounded-3xl border border-white/90 shadow-2xl relative overflow-hidden">
           
           {/* Section Header */}
           <div className="max-w-2xl mb-8 space-y-2">
@@ -142,14 +142,14 @@ export default function PricingCalculator({ onOpenBooking }: PricingCalculatorPr
                     <button
                       key={issue.id}
                       onClick={() => setIssueType(issue.id)}
-                      className={`w-full p-4 rounded-2xl text-left text-sm font-semibold transition-all flex items-center justify-between border ${
+                      className={`w-full p-3.5 sm:p-4 rounded-2xl text-left text-xs sm:text-sm font-semibold transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-2 border ${
                         issueType === issue.id
                           ? 'bg-blue-50 border-blue-500 text-blue-900 shadow-sm'
                           : 'bg-white/60 border-slate-200/80 text-slate-700 hover:bg-white'
                       }`}
                     >
-                      <span>{issue.label}</span>
-                      <span className="text-xs text-slate-500 font-normal">Est: {issue.time}</span>
+                      <span className="min-w-0">{issue.label}</span>
+                      <span className="text-[11px] sm:text-xs text-slate-500 font-normal shrink-0">Est: {issue.time}</span>
                     </button>
                   ))}
                 </div>

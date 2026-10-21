@@ -51,12 +51,12 @@ export default function Header({ onOpenBooking }: HeaderProps) {
               sizes="44px"
             />
           </div>
-          <div className="shrink-0 flex flex-col justify-center">
+          <div className="shrink-0 flex flex-col justify-center min-w-0">
             <div className="flex items-center gap-1.5 whitespace-nowrap">
-              <span className="font-extrabold text-sm min-[390px]:text-base sm:text-lg lg:text-xl tracking-tight text-slate-900 whitespace-nowrap">
+              <span className="font-extrabold text-xs min-[360px]:text-sm min-[400px]:text-base sm:text-lg lg:text-xl tracking-tight text-slate-900 whitespace-nowrap">
                 ATHARVA<span className="text-blue-600"> COOLING </span>POINT
               </span>
-              <span className="text-[9px] min-[390px]:text-[10px] uppercase tracking-wider font-semibold bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded">
+              <span className="hidden min-[370px]:inline-block text-[9px] min-[390px]:text-[10px] uppercase tracking-wider font-semibold bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded">
                 Surat
               </span>
             </div>

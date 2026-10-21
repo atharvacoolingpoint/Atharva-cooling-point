@@ -59,19 +59,19 @@ export default function HomePage() {
             Our technician is ready to dispatch to Adajan, Vesu, Varachha, Katargam, Athwa, or any Surat location right now.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-4 max-w-lg mx-auto sm:max-w-none">
             <button
               onClick={() => setBookingOpen(true)}
-              className="px-8 py-4 rounded-2xl bg-white text-blue-900 font-extrabold text-base shadow-2xl hover:bg-slate-100 hover:scale-105 active:scale-95 transition-all flex items-center gap-2"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl bg-white text-blue-900 font-extrabold text-sm sm:text-base shadow-2xl hover:bg-slate-100 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2"
             >
               <span>Book Doorstep Service</span>
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4 shrink-0" />
             </button>
             <a
               href={`tel:${PHONE_NUMBER}`}
-              className="px-8 py-4 rounded-2xl bg-blue-900/60 border border-white/30 text-white font-bold text-base hover:bg-blue-900 transition-all flex items-center gap-2"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl bg-blue-900/60 border border-white/30 text-white font-bold text-sm sm:text-base hover:bg-blue-900 transition-all flex items-center justify-center gap-2"
             >
-              <Phone className="w-5 h-5 text-amber-300 animate-pulse" />
+              <Phone className="w-5 h-5 text-amber-300 animate-pulse shrink-0" />
               <span>Call Hotline: {PHONE_NUMBER}</span>
             </a>
           </div>

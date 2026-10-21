@@ -65,16 +65,16 @@ export default function Hero({ onOpenBooking }: HeroProps) {
 
             {/* Surat Location Search Widget */}
             <div className="relative max-w-lg mx-auto lg:mx-0">
-              <div className="glass-panel p-2 rounded-2xl shadow-xl border border-white/90 flex items-center gap-2">
-                <div className="pl-3 text-blue-600">
-                  <MapPin className="w-5 h-5 animate-bounce" />
+              <div className="glass-panel p-1.5 sm:p-2 rounded-2xl shadow-xl border border-white/90 flex items-center gap-1.5 sm:gap-2">
+                <div className="pl-2 sm:pl-3 text-blue-600 shrink-0">
+                  <MapPin className="w-4 h-4 sm:w-5 sm:h-5 animate-bounce" />
                 </div>
                 <input
                   type="text"
-                  placeholder="Enter your Surat area (e.g., Adajan, Vesu, Varachha)..."
+                  placeholder="Search Surat area (e.g., Adajan)..."
                   value={searchQuery}
                   onChange={handleSearchChange}
-                  className="w-full py-2 bg-transparent text-sm font-medium text-slate-900 focus:outline-none placeholder-slate-400"
+                  className="w-full py-1.5 sm:py-2 bg-transparent text-xs sm:text-sm font-medium text-slate-900 focus:outline-none placeholder-slate-400 min-w-0"
                 />
                 <button
                   onClick={() => {
@@ -82,9 +82,9 @@ export default function Hero({ onOpenBooking }: HeroProps) {
                       window.location.href = `/location/${searchResults[0].slug}`;
                     }
                   }}
-                  className="px-4 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs rounded-xl shadow-md transition-all shrink-0 flex items-center gap-1"
+                  className="px-3 sm:px-4 py-2 sm:py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs rounded-xl shadow-md transition-all shrink-0 flex items-center gap-1"
                 >
-                  <Search className="w-3.5 h-3.5" /> Check Area
+                  <Search className="w-3.5 h-3.5" /> <span>Check Area</span>
                 </button>
               </div>
 
@@ -204,44 +204,44 @@ export default function Hero({ onOpenBooking }: HeroProps) {
               </div>
 
               {/* Service Quick Badges */}
-              <div className="grid grid-cols-2 gap-3 mt-3">
-                <div className="glass-panel p-3 rounded-2xl flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-lg">
+              <div className="grid grid-cols-2 gap-2 sm:gap-3 mt-3">
+                <div className="glass-panel p-2 sm:p-3 rounded-2xl flex items-center gap-2 sm:gap-3 min-w-0">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-base sm:text-lg shrink-0">
                     🧺
                   </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-slate-900">Washing Machine</h4>
-                    <p className="text-[10px] text-slate-500">Front & Top Load, Semi</p>
+                  <div className="min-w-0 flex-1">
+                    <h4 className="text-[11px] sm:text-xs font-bold text-slate-900 truncate">Washing Machine</h4>
+                    <p className="text-[9px] sm:text-[10px] text-slate-500 truncate">Front & Top, Semi</p>
                   </div>
                 </div>
 
-                <div className="glass-panel p-3 rounded-2xl flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-cyan-100 text-cyan-600 flex items-center justify-center font-bold text-lg">
+                <div className="glass-panel p-2 sm:p-3 rounded-2xl flex items-center gap-2 sm:gap-3 min-w-0">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-cyan-100 text-cyan-600 flex items-center justify-center font-bold text-base sm:text-lg shrink-0">
                     ❄️
                   </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-slate-900">AC Repair</h4>
-                    <p className="text-[10px] text-slate-500">Split, Inverter, Window</p>
+                  <div className="min-w-0 flex-1">
+                    <h4 className="text-[11px] sm:text-xs font-bold text-slate-900 truncate">AC Repair</h4>
+                    <p className="text-[9px] sm:text-[10px] text-slate-500 truncate">Split & Inverter</p>
                   </div>
                 </div>
 
-                <div className="glass-panel p-3 rounded-2xl flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold text-lg">
+                <div className="glass-panel p-2 sm:p-3 rounded-2xl flex items-center gap-2 sm:gap-3 min-w-0">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold text-base sm:text-lg shrink-0">
                     🍲
                   </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-slate-900">Microwave Oven</h4>
-                    <p className="text-[10px] text-slate-500">Convection, Solo, Grill</p>
+                  <div className="min-w-0 flex-1">
+                    <h4 className="text-[11px] sm:text-xs font-bold text-slate-900 truncate">Microwave Oven</h4>
+                    <p className="text-[9px] sm:text-[10px] text-slate-500 truncate">Convection, Solo</p>
                   </div>
                 </div>
 
-                <div className="glass-panel p-3 rounded-2xl flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold text-lg">
+                <div className="glass-panel p-2 sm:p-3 rounded-2xl flex items-center gap-2 sm:gap-3 min-w-0">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold text-base sm:text-lg shrink-0">
                     🧊
                   </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-slate-900">Fridge Repair</h4>
-                    <p className="text-[10px] text-slate-500">Side-by-Side, Frost Free</p>
+                  <div className="min-w-0 flex-1">
+                    <h4 className="text-[11px] sm:text-xs font-bold text-slate-900 truncate">Fridge Repair</h4>
+                    <p className="text-[9px] sm:text-[10px] text-slate-500 truncate">Side-by-Side, Frost</p>
                   </div>
                 </div>
               </div>

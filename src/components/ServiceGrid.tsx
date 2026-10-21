@@ -124,7 +124,7 @@ export default function ServiceGrid({ onOpenBooking }: ServiceGridProps) {
               </div>
 
               {/* Card Body */}
-              <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div className="p-4 sm:p-6 flex-1 flex flex-col justify-between space-y-4">
                 <div>
                   <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
                     {service.title}
