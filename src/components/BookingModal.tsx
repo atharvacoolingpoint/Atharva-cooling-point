@@ -54,39 +54,39 @@ export default function BookingModal({ isOpen, onClose, defaultLocation = '' }: 
       />
 
       {/* Modal Dialog */}
-      <div className="relative w-full max-w-lg glass-panel rounded-3xl p-5 sm:p-8 shadow-2xl border border-white/90 z-10 animate-fadeIn my-6 max-h-[90vh] overflow-y-auto">
+      <div className="relative w-full max-w-md glass-panel rounded-3xl p-4 sm:p-6 shadow-2xl border border-white/90 z-10 animate-fadeIn my-auto max-h-[90vh] overflow-y-auto">
         
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-full glass-pill text-slate-500 hover:text-slate-900 transition-colors"
+          className="absolute top-4 right-4 p-1.5 rounded-full glass-pill text-slate-500 hover:text-slate-900 transition-colors"
           aria-label="Close modal"
         >
-          <X className="w-5 h-5" />
+          <X className="w-4 h-4" />
         </button>
 
         {!submitted ? (
-          <form onSubmit={handleSubmit} className="space-y-5">
+          <form onSubmit={handleSubmit} className="space-y-3.5">
             <div>
-              <div className="flex items-center gap-2 text-blue-600 text-xs font-bold uppercase tracking-wider mb-1">
-                <Wrench className="w-4 h-4" /> Doorstep Technician Booking
+              <div className="flex items-center gap-1.5 text-blue-600 text-[10px] font-bold uppercase tracking-wider mb-0.5">
+                <Wrench className="w-3.5 h-3.5" /> Doorstep Technician Booking
               </div>
-              <h3 className="text-2xl font-extrabold text-slate-900 tracking-tight">
+              <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight">
                 Book a Repair in Surat
               </h3>
-              <p className="text-xs text-slate-500">
-                Technician dispatches within 30 minutes. Pay after repair with 90-day warranty.
+              <p className="text-[11px] text-slate-500">
+                Technician dispatches within 30 mins • 90-day warranty
               </p>
             </div>
 
             {/* Device Selector */}
             <div>
-              <label className="block text-xs font-bold uppercase text-slate-400 mb-1.5">Select Appliance</label>
-              <div className="grid grid-cols-2 gap-2">
+              <label className="block text-[10px] font-bold uppercase text-slate-400 mb-1">Select Appliance</label>
+              <div className="grid grid-cols-2 gap-1.5">
                 <button
                   type="button"
                   onClick={() => { setDevice('washing'); setIssue('Not Spinning / Vibration Noise'); }}
-                  className={`py-2.5 px-3 rounded-xl text-xs font-bold transition-all ${
+                  className={`py-2 px-2.5 rounded-xl text-[11px] font-bold transition-all text-left truncate ${
                     device === 'washing' ? 'bg-blue-600 text-white shadow-md' : 'glass-panel text-slate-700'
                   }`}
                 >
@@ -95,7 +95,7 @@ export default function BookingModal({ isOpen, onClose, defaultLocation = '' }: 
                 <button
                   type="button"
                   onClick={() => { setDevice('ac'); setIssue('Not Cooling / Blowing Warm Air'); }}
-                  className={`py-2.5 px-3 rounded-xl text-xs font-bold transition-all ${
+                  className={`py-2 px-2.5 rounded-xl text-[11px] font-bold transition-all text-left truncate ${
                     device === 'ac' ? 'bg-cyan-600 text-white shadow-md' : 'glass-panel text-slate-700'
                   }`}
                 >
@@ -104,7 +104,7 @@ export default function BookingModal({ isOpen, onClose, defaultLocation = '' }: 
                 <button
                   type="button"
                   onClick={() => { setDevice('microwave'); setIssue('Food Not Heating / Magnetron Problem'); }}
-                  className={`py-2.5 px-3 rounded-xl text-xs font-bold transition-all ${
+                  className={`py-2 px-2.5 rounded-xl text-[11px] font-bold transition-all text-left truncate ${
                     device === 'microwave' ? 'bg-amber-600 text-white shadow-md' : 'glass-panel text-slate-700'
                   }`}
                 >
@@ -113,7 +113,7 @@ export default function BookingModal({ isOpen, onClose, defaultLocation = '' }: 
                 <button
                   type="button"
                   onClick={() => { setDevice('refrigerator'); setIssue('Fridge Gas Refilling & Leak Repair'); }}
-                  className={`py-2.5 px-3 rounded-xl text-xs font-bold transition-all ${
+                  className={`py-2 px-2.5 rounded-xl text-[11px] font-bold transition-all text-left truncate ${
                     device === 'refrigerator' ? 'bg-emerald-600 text-white shadow-md' : 'glass-panel text-slate-700'
                   }`}
                 >
@@ -124,11 +124,11 @@ export default function BookingModal({ isOpen, onClose, defaultLocation = '' }: 
 
             {/* Issue Selector */}
             <div>
-              <label className="block text-xs font-bold uppercase text-slate-400 mb-1.5">Issue Description</label>
+              <label className="block text-[10px] font-bold uppercase text-slate-400 mb-1">Issue Description</label>
               <select
                 value={issue}
                 onChange={(e) => setIssue(e.target.value)}
-                className="w-full px-4 py-3 rounded-2xl glass-input text-xs font-semibold text-slate-900"
+                className="w-full px-3 py-2 rounded-xl glass-input text-xs font-semibold text-slate-900"
               >
                 {device === 'washing' && (
                   <>
@@ -170,40 +170,40 @@ export default function BookingModal({ isOpen, onClose, defaultLocation = '' }: 
             </div>
 
             {/* Contact Details */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               <div>
-                <label className="block text-xs font-bold uppercase text-slate-400 mb-1">Your Name</label>
+                <label className="block text-[10px] font-bold uppercase text-slate-400 mb-1">Your Name</label>
                 <input
                   type="text"
                   required
                   placeholder="Rahul Patel"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full px-4 py-2.5 rounded-2xl glass-input text-xs font-semibold text-slate-900"
+                  className="w-full px-3 py-2 rounded-xl glass-input text-xs font-semibold text-slate-900"
                 />
               </div>
 
               <div>
-                <label className="block text-xs font-bold uppercase text-slate-400 mb-1">Phone Number</label>
+                <label className="block text-[10px] font-bold uppercase text-slate-400 mb-1">Phone Number</label>
                 <input
                   type="tel"
                   required
                   placeholder="+91 90042 67813"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  className="w-full px-4 py-2.5 rounded-2xl glass-input text-xs font-semibold text-slate-900"
+                  className="w-full px-3 py-2 rounded-xl glass-input text-xs font-semibold text-slate-900"
                 />
               </div>
             </div>
 
             {/* Surat Area Selection */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               <div>
-                <label className="block text-xs font-bold uppercase text-slate-400 mb-1">Surat Locality</label>
+                <label className="block text-[10px] font-bold uppercase text-slate-400 mb-1">Surat Locality</label>
                 <select
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
-                  className="w-full px-4 py-2.5 rounded-2xl glass-input text-xs font-semibold text-slate-900"
+                  className="w-full px-3 py-2 rounded-xl glass-input text-xs font-semibold text-slate-900"
                 >
                   {SURAT_LOCATIONS.map((loc) => (
                     <option key={loc.slug} value={loc.name}>
@@ -214,13 +214,13 @@ export default function BookingModal({ isOpen, onClose, defaultLocation = '' }: 
               </div>
 
               <div>
-                <label className="block text-xs font-bold uppercase text-slate-400 mb-1">Preferred Time</label>
+                <label className="block text-[10px] font-bold uppercase text-slate-400 mb-1">Preferred Time</label>
                 <select
                   value={preferredDate}
                   onChange={(e) => setPreferredDate(e.target.value)}
-                  className="w-full px-4 py-2.5 rounded-2xl glass-input text-xs font-semibold text-slate-900"
+                  className="w-full px-3 py-2 rounded-xl glass-input text-xs font-semibold text-slate-900"
                 >
-                  <option value="Today (Same-Day Urgent)">Today (Urgent 30-Min Arrival)</option>
+                  <option value="Today (Same-Day Urgent)">Today (Urgent 30-Min)</option>
                   <option value="Today Evening (4 PM - 7 PM)">Today Evening (4 PM - 7 PM)</option>
                   <option value="Tomorrow Morning (9 AM - 12 PM)">Tomorrow Morning (9 AM - 12 PM)</option>
                   <option value="Tomorrow Afternoon (12 PM - 4 PM)">Tomorrow Afternoon (12 PM - 4 PM)</option>
@@ -229,25 +229,25 @@ export default function BookingModal({ isOpen, onClose, defaultLocation = '' }: 
             </div>
 
             <div>
-              <label className="block text-xs font-bold uppercase text-slate-400 mb-1">Doorstep Street Address</label>
+              <label className="block text-[10px] font-bold uppercase text-slate-400 mb-1">Doorstep Street Address</label>
               <textarea
                 required
                 rows={2}
-                placeholder="House/Flat No., Building Name, Street, Landmark..."
+                placeholder="House/Flat No., Building Name, Street..."
                 value={address}
                 onChange={(e) => setAddress(e.target.value)}
-                className="w-full px-4 py-2.5 rounded-2xl glass-input text-xs font-semibold text-slate-900"
+                className="w-full px-3 py-2 rounded-xl glass-input text-xs font-semibold text-slate-900"
               />
             </div>
 
             <button
               type="submit"
-              className="w-full py-4 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 text-white font-extrabold text-sm shadow-xl shadow-blue-600/30 hover:scale-[1.01] transition-all shimmer-btn flex items-center justify-center gap-2"
+              className="w-full py-3 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 text-white font-extrabold text-xs sm:text-sm shadow-lg shadow-blue-600/30 hover:scale-[1.01] transition-all shimmer-btn flex items-center justify-center gap-2"
             >
               <span>Dispatch Certified Technician</span>
             </button>
 
-            <p className="text-[11px] text-slate-400 text-center font-medium flex items-center justify-center gap-1">
+            <p className="text-[10px] text-slate-400 text-center font-medium flex items-center justify-center gap-1">
               <Shield className="w-3.5 h-3.5 text-emerald-500" />
               <span>Free Inspection on Repair Order • 90-Day Free Warranty</span>
             </p>
