@@ -1,5 +1,5 @@
 export const SITE_NAME = 'Atharva Cooling Point';
-export const SITE_URL = 'https://surattv.in';
+export const SITE_URL = 'https://www.atharvacoolingpointservice.center';
 export const PHONE_NUMBER = '+91 90042 67813';
 export const WHATSAPP_NUMBER = '919004267813';
 export const FULL_ADDRESS = 'Charbhuja Arcade, Gala No. 2, New Kosad Road, Near Charbhuja Circle, Amroli, Surat, Gujarat.';
