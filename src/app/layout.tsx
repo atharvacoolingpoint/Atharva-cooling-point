@@ -65,6 +65,9 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true
+  },
+  verification: {
+    google: 'UCD5sWYTDCGN_iP9M57GuvY5xnQFzVn4F7Ob0azSTZg'
   }
 };
 
@@ -78,6 +81,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="UCD5sWYTDCGN_iP9M57GuvY5xnQFzVn4F7Ob0azSTZg" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
