@@ -3,7 +3,7 @@ export interface BlogPost {
   title: string;
   excerpt: string;
   content: string;
-  category: 'TV Repair' | 'Refrigerator Repair' | 'Maintenance Tips';
+  category: 'Washing Machine Repair' | 'Refrigerator Repair' | 'Maintenance Tips';
   date: string;
   readTime: string;
   author: string;
@@ -11,30 +11,30 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    slug: 'tv-black-screen-sound-working-surat-guide',
-    title: 'Why is My TV Screen Black but Sound is Working? (Surat Repair Guide)',
-    excerpt: 'Discover the #1 cause of TV black screen with audio in Surat homes and how our technicians replace LED backlights in 45 minutes.',
-    category: 'TV Repair',
+    slug: 'washing-machine-not-spinning-water-draining-surat-guide',
+    title: 'Why is My Washing Machine Not Spinning or Draining? (Surat Repair Guide)',
+    excerpt: 'Discover the top causes of washing machine spin failure and drain pump issues in Surat homes, and how our technicians resolve them in 30 minutes.',
+    category: 'Washing Machine Repair',
     date: 'September 28, 2026',
     readTime: '5 min read',
     author: 'Atharva Cooling Point Master Tech',
     content: `
-      <h2>The Most Common TV Problem in Surat</h2>
-      <p>If you turned on your Samsung, LG, Sony, or Mi TV and heard audio from news or movies, but the screen stayed completely pitch black, don't worry—your TV's main computer chip and display panel are usually 100% fine!</p>
+      <h2>The Most Common Washing Machine Problem in Surat</h2>
+      <p>If your front load or top load washing machine stops mid-cycle with water sitting in the drum, or refuses to spin during the drain cycle, don't panic—your motor and main electronics are usually repairable!</p>
       
-      <h3>What Causes Black Screen with Sound?</h3>
-      <p>Modern LED and Smart TVs use a strip of high-intensity Light Emitting Diodes (LED backlight) placed behind the LCD/OLED panel glass. Over 2 to 4 years of heavy usage in Surat's warm climate, one or more LED diodes burn out due to thermal stress.</p>
-      <p>Because the backlight circuit runs in series, a single burnt diode cuts off power to the entire backlight array. The display panel still receives video signals, but without light shining through it, the screen appears pitch black.</p>
+      <h3>What Causes Spin and Drain Failures?</h3>
+      <p>Modern washing machines from LG, Samsung, IFB, Whirlpool, and Bosch rely on automatic drainage pumps and pressure sensors. In Surat, hard water scale, lint, and loose coins or buttons commonly clog the drain pump filter.</p>
+      <p>When the drain sensor detects water remaining in the tub, the safety logic prevents the machine from entering high-speed spin (e.g. 800-1400 RPM) to prevent severe vibration or flooding.</p>
       
-      <h3>How to Confirm it at Home (Flashlight Test)</h3>
+      <h3>3 Quick Checks You Can Do at Home</h3>
       <ol>
-        <li>Turn on your TV and play any channel so audio is audible.</li>
-        <li>Grab your smartphone flashlight and shine it directly at the glass screen from 2 inches away.</li>
-        <li>Look very closely. If you can see faint images or shadows moving behind your flashlight beam, your TV panel logic is intact and only the LED backlights need replacement!</li>
+        <li><strong>Clean the Drain Filter:</strong> Open the lower service door at the bottom-right of your front load washer. Unscrew the circular filter and clear any trapped hair, coins, or debris.</li>
+        <li><strong>Check the Drain Hose:</strong> Make sure the drain pipe at the back is not kinked, bent, or placed higher than the recommended height.</li>
+        <li><strong>Redistribute the Laundry Load:</strong> An uneven load (such as a single heavy bedsheet) triggers unbalance detection (UE error code) and halts the spin cycle.</li>
       </ol>
       
       <h3>How Atharva Cooling Point Repairs It at Your Doorstep</h3>
-      <p>Our certified engineers visit your home anywhere in Surat (Adajan, Vesu, Varachha, Katargam, etc.) with brand-new, high-lumens aluminum-core LED strip replacements. We disassemble the bezel safely, replace the old strip array, calibrate voltage, and test brightness in under 45 minutes with a 90-day warranty!</p>
+      <p>Our certified engineers visit your home anywhere in Surat (Adajan, Vesu, Varachha, Katargam, Piplod, etc.) with original replacement drain pump motors, drive belts, drum bearings, and pressure switches. We diagnose error codes, test the motor, and restore normal washing cycles within 30 to 45 minutes with a 90-day warranty!</p>
     `
   },
   {

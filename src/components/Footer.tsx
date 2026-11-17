@@ -35,7 +35,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
-              Atharva Cooling Point is Surat's premier home appliance service network. Providing 30-minute doorstep repair for Washing Machines, Air Conditioners, Microwave Ovens, and Refrigerators backed by an official 90-day guarantee.
+              Atharva Cooling Point is Surat's premier appliance service network. Providing 30-minute doorstep repair for Washing Machines, Air Conditioners, Microwave Ovens, and Refrigerators backed by an official 90-day guarantee.
             </p>
 
             <div className="space-y-2 pt-2 text-xs">

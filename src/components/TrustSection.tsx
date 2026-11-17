@@ -8,7 +8,7 @@ export default function TrustSection() {
     {
       icon: ShieldCheck,
       title: '90-Day Service Guarantee',
-      desc: 'All TV panel replacements, LED backlight strips, and refrigerator gas fillings come with an official 90-day parts warranty.'
+      desc: 'All washing machine motors, drum bearings, AC compressors, and refrigerator gas fillings come with an official 90-day parts warranty.'
     },
     {
       icon: Zap,
@@ -18,7 +18,7 @@ export default function TrustSection() {
     {
       icon: Award,
       title: '100% Genuine OEM Parts',
-      desc: 'We strictly install authentic manufacturer replacement components for Samsung, LG, Sony, Whirlpool, Bosch, and Godrej.'
+      desc: 'We strictly install authentic manufacturer replacement components for Samsung, LG, IFB, Whirlpool, Bosch, and Godrej.'
     },
     {
       icon: Wrench,

@@ -3,8 +3,8 @@ import SuratAreaGrid from '@/components/SuratAreaGrid';
 import { generateBreadcrumbSchema } from '@/lib/seo';
 
 export const metadata = {
-  title: 'Surat TV & Refrigerator Repair Locations | 20+ Service Areas',
-  description: 'Doorstep TV and Refrigerator repair service coverage across all Surat neighborhoods including Adajan, Vesu, Athwa, Varachha, Katargam, Piplod, City Light, Pal & Udhna.',
+  title: 'Surat Washing Machine, AC & Refrigerator Repair Locations | 20+ Service Areas',
+  description: 'Doorstep Washing Machine, AC, Microwave Oven & Refrigerator repair service coverage across all Surat neighborhoods including Adajan, Vesu, Athwa, Varachha, Katargam, Piplod, City Light, Pal & Udhna.',
 };
 
 export default function LocationsDirectoryPage() {

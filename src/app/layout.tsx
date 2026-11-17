@@ -6,7 +6,7 @@ import ClientLayout from '@/components/ClientLayout';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Atharva Cooling Point - Washing Machine, AC, Microwave & Refrigerator Repair Service',
+    default: 'Atharva Cooling Point - Washing Machine, AC, Microwave & Refrigerator Repair in Surat',
     template: '%s | Atharva Cooling Point'
   },
   description: 'Fast doorstep Washing Machine, AC, Microwave Oven & Refrigerator repair across Surat (Adajan, Vesu, Varachha, Katargam, Athwa & all areas). Certified technicians, original spare parts, and 90-day warranty.',

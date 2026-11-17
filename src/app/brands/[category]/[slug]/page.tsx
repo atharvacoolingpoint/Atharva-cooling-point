@@ -12,7 +12,7 @@ interface BrandPageProps {
 
 export async function generateStaticParams() {
   return BRANDS_DATA.map((brand) => ({
-    category: brand.category === 'all' ? 'washing-machine' : brand.category,
+    category: brand.category,
     slug: brand.slug
   }));
 }
@@ -69,7 +69,7 @@ export default async function BrandDetailPage({ params }: BrandPageProps) {
             </h1>
 
             <p className="text-slate-600 text-base leading-relaxed max-w-3xl">
-              {brand.description} We carry genuine OEM factory spare parts, replacement power boards, LED backlight strips, compressor relays, and sensors specifically designed for {brand.name} models.
+              {brand.description} We carry genuine OEM factory spare parts, replacement motors, PCB boards, compressor relays, and sensors specifically designed for {brand.name} models.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-2">
