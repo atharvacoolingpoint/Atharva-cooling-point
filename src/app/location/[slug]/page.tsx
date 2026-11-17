@@ -23,9 +23,9 @@ export async function generateMetadata({ params }: LocationPageProps) {
   if (!loc) return { title: 'Location Not Found' };
 
   return {
-    title: `TV & Refrigerator Repair in ${loc.name}, Surat | 30 Min Doorstep Service`,
-    description: `Professional doorstep TV & Refrigerator repair in ${loc.name}, Surat (${loc.pincode}). Certified technicians near ${loc.landmarks.slice(0, 3).join(', ')}. 90-day warranty.`,
-    keywords: `TV repair in ${loc.name}, Refrigerator repair in ${loc.name}, TV technician ${loc.name} Surat, fridge gas refill ${loc.name}`
+    title: `Washing Machine & Appliance Repair in ${loc.name}, Surat | 30 Min Service`,
+    description: `Doorstep Washing Machine, AC, Microwave & Refrigerator repair in ${loc.name}, Surat (${loc.pincode}). Certified technicians near ${loc.landmarks.slice(0, 3).join(', ')}. 90-day warranty.`,
+    keywords: `Washing Machine repair in ${loc.name}, Refrigerator repair in ${loc.name}, AC repair ${loc.name}, Microwave repair ${loc.name}, appliance technician ${loc.name} Surat`
   };
 }
 
@@ -54,7 +54,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
     },
     {
       question: `Which brands do you service in ${loc.name}?`,
-      answer: `We repair all major TV and refrigerator brands in ${loc.name} including Samsung, LG, Sony, Whirlpool, Godrej, Bosch, Mi, and Panasonic.`
+      answer: `We repair all major washing machine, AC, and refrigerator brands in ${loc.name} including Samsung, LG, IFB, Whirlpool, Godrej, Bosch, Voltas, and Daikin.`
     }
   ];
 
@@ -82,7 +82,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
               </div>
 
               <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                Doorstep TV & Refrigerator Repair in <span className="gradient-text">{loc.name}, Surat</span>
+                Doorstep Washing Machine & Appliance Repair in <span className="gradient-text">{loc.name}, Surat</span>
               </h1>
 
               <p className="text-slate-600 text-base leading-relaxed">

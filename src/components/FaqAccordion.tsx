@@ -21,19 +21,19 @@ export default function FaqAccordion({ faqs, title = "Frequently Asked Questions
     },
     {
       question: "What is your repair warranty policy?",
-      answer: "All spare parts installed (such as LED backlight strips, TV power boards, refrigerator compressors, defrost timers, and gas refills) come with an official 90-day free replacement warranty."
+      answer: "All spare parts installed (such as washing machine drain pumps, drum bearings, AC compressors, refrigerator defrost timers, and gas refills) come with an official 90-day free replacement warranty."
     },
     {
-      question: "Do you fix TV backlight black screen issues at home?",
-      answer: "Yes! 95% of TV LED backlight and power supply repairs are completed directly in your living room in front of your eyes in under 45 minutes."
+      question: "Do you fix washing machine drum noise and spin issues at home?",
+      answer: "Yes! 95% of washing machine motor, drain pump, belt, and bearing repairs are completed directly at your doorstep in under 45 minutes."
     },
     {
       question: "How much does refrigerator gas refilling cost in Surat?",
       answer: "Gas refilling starts from ₹799 and includes nitrogen leak pressure testing, silver brazing pipe fitting, deep vacuum evacuation, and R600a or R134a eco-friendly gas charging."
     },
     {
-      question: "Which TV and Refrigerator brands do you repair?",
-      answer: "We service Samsung, LG, Sony, Whirlpool, Godrej, Bosch, Panasonic, Haier, Xiaomi/Mi, OnePlus, TCL, Vu, Philips, IFB, and Voltas."
+      question: "Which home appliance brands do you repair?",
+      answer: "We service Samsung, LG, IFB, Whirlpool, Godrej, Bosch, Voltas, Daikin, Panasonic, and Haier across all appliance categories."
     },
     {
       question: "Are there any hidden visit charges if I get my device repaired?",
@@ -60,7 +60,7 @@ export default function FaqAccordion({ faqs, title = "Frequently Asked Questions
             {title}
           </h2>
           <p className="text-slate-600 text-sm">
-            Everything you need to know about TV and refrigerator repairs in Surat.
+            Everything you need to know about washing machine, AC, microwave, and home appliance repairs in Surat.
           </p>
         </div>
 

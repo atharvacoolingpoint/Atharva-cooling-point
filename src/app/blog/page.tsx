@@ -30,7 +30,7 @@ export default function BlogIndexPage() {
               Surat Appliance Repair <span className="gradient-text">Blog & Guides</span>
             </h1>
             <p className="text-slate-600 text-base">
-              Learn how to troubleshoot common TV and refrigerator issues and keep your appliances working efficiently.
+              Learn how to troubleshoot common washing machine, AC, and refrigerator issues and keep your appliances working efficiently.
             </p>
           </div>
 
